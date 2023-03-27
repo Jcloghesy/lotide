@@ -1,15 +1,26 @@
 // **** TESTING: head FUNCTION ****
 
-// **** REFERENCING OTHER FUNCTION(s): head & assertEqual **** 
-const head = require('../head'); 
-const assertEqual = require('../assertEqual');
+const assert = require('chai').assert;
+const head   = require('../head');
 
-//    Test Set 1: Assigned Test Cases
-//     tests list in Compass ensuring first item in array is function's result
-assertEqual(head([5,6,7]), 5);                              // 5 ==== 5 --> true
-assertEqual(head(["Hello", "Lighthouse", "Labs"]), "Hello");//Hello===Hello true
+describe("#head", () => {
+  it("returns 1 for [1, 2, 3]", () => {
+    assert.strictEqual(head([1, 2, 3]), 1);
+  });
 
-//    Test Set 2: Additional Test Cases 
-//     testing single item array is find & empty array returns undefined
-assertEqual(head(["Only Item"]), "Only Item");// Only Item === Only Item -> true
-assertEqual(head([]), undefined); // undefined -> true
+  it("returns '5' for ['5']", () => {
+    assert.strictEqual(head(['5']), '5'); 
+  });
+
+  it("returns 5 for [5,6,7]", () => {
+    assert.strictEqual(head([5,6,7]), 5);
+  });
+
+  it("returns '5' for ['5']", () => {
+    assert.strictEqual(head(['5']), '5');
+  });
+
+  it("returns '5' for ['5']", () => {
+    assert.strictEqual(head(['5']), '5');
+  });
+});

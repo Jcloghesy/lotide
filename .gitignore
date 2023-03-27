@@ -1,7 +1,6 @@
 node_modules
 .eslintrc.js
 package-lock.json
-package.json
 .vscode/extensions.js
 extensions.json
 assertArrayEqual.js
