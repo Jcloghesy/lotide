@@ -1,31 +1,6 @@
 // ********* middle FUNCTION  ********* 
 
 
-// **** REFERENCING OTHER FUNCTIONS: assertArrayEqual and eqArray ****
-
-//   eqArray Function Referenced 
-const eqArrays = (myArray1, myArray2) => {
-  if (myArray1.length !== myArray2.length) {// tests length
-    return false;
-  }
-    for (let i = 0; i < myArray1.length; i++) { // compares items
-        if (myArray1[i] !== myArray2[i]) {          
-          return false;  
-        }
-      }
-  return true;
-};
-
-//   assertArrayEqual Function Referenced 
-const assertArraysEqual = function (myArray1, myArray2) {
-  if (!eqArrays(myArray1, myArray2)) {
-    console.log(`❌❌❌ Assertion Failed: ${myArray1} !== ${myArray2}`);
-  } else {
-    console.log(`✅✅✅ Assertion Passed: ${myArray1} === ${myArray2}`);
-  }
-};
-
-
 /** **** FUNCTION IMPLEMENTATION: middle FUNCTION ****
  *  Functionality - a function that takes in an array and 
  *                  returns middle most element of the array.  
@@ -61,18 +36,4 @@ const middle = function (sourceArray) {
   }
 };
 
-
-// **** TESTING: middle FUNCTION ****
-
-//    Test Set 1: Testing Arrays Containing One or Two Items
-assertArraysEqual(middle([1]), []);   // middle([1])   => []
-assertArraysEqual(middle([1,2]), []); // middle([1,2]) => []
-
-//    Test Set 2: Testing Arrays Containing Even Number of Items
-assertArraysEqual(middle([1,2,3]), [2]);     // middle([1,2,3])     => [2]
-assertArraysEqual(middle([1,2,3,4,5]), [3]); // middle([1,2,3,4,5]) => [3]
-
-//    Test Set 3: Testing Arrays Containing an Odd Number of Items
-assertArraysEqual(middle([1,2,3,4]), [2,3]);    // middle([1,2,3,4])    => [2,3]
-assertArraysEqual(middle([1,2,3,4,5,6]), [3,4]);// middle([1,2,3,4,5,6])=> [3,4]
-
+module.exports = middle;
