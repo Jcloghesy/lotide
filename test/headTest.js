@@ -1,8 +1,8 @@
 // **** TESTING: head FUNCTION ****
 
-// **** REFERENCING OTHER FUNCTION(s): assertEqual & head **** 
+// **** REFERENCING OTHER FUNCTION(s): head & assertEqual **** 
+const head = require('../head'); 
 const assertEqual = require('../assertEqual');
-const head = require('../head');
 
 //    Test Set 1: Assigned Test Cases
 //     tests list in Compass ensuring first item in array is function's result

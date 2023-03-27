@@ -4,3 +4,4 @@ package-lock.json
 package.json
 .vscode/extensions.js
 extensions.json
+assertArrayEqual.js

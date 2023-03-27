@@ -1,6 +1,6 @@
-// ********* eqArray FUNCTION  ********* 
+// ********* eqArrays FUNCTION  ********* 
 
-/** **** FUNCTION IMPLEMENTATION: eqArray FUNCTION ****
+/** **** FUNCTION IMPLEMENTATION: eqArrays FUNCTION ****
  *  Functionality - a function that takes in 2 arrays and 
  *                   returns true if the arrays are equal and false otherwise
  * 
