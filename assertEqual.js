@@ -5,11 +5,12 @@
  *  Functionality - a function that takes in 2 values and returns true
  *                  if they are equal and false otherwise.
  */
+//    - function updated to adding emojis (template literals already employed)
 const assertEqual = function (actual, expected) {
   if (actual === expected) {
-    console.log(`Assertion Passed: ${actual} === ${expected}`);
+    console.log(`✅✅✅ Assertion Passed: ${actual} === ${expected}`);
   } else {
-    console.log(`Assertion Failed: ${actual} !== ${expected}`);
+    console.log(`❌❌❌ Assertion Failed: ${actual} !== ${expected}`);
   }
 };
 
