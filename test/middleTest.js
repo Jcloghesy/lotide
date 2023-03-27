@@ -1,18 +1,16 @@
 // **** TESTING: middle FUNCTION ****
 
-// **** REFERENCING OTHER FUNCTION(s): middle & assertArraysEqual & eqArrays****
-const middle = require ('../middle');
-const assertArraysEqual = require ('../assertArraysEqual');
+const assert = require('chai').assert;
+const middle = require('../middle');
 
-//    Test Set 1: Testing Arrays Containing One or Two Items
-assertArraysEqual(middle([1]), []);   // middle([1])   => []
-assertArraysEqual(middle([1,2]), []); // middle([1,2]) => []
-
-//    Test Set 2: Testing Arrays Containing Even Number of Items
-assertArraysEqual(middle([1,2,3]), [2]);     // middle([1,2,3])     => [2]
-assertArraysEqual(middle([1,2,3,4,5]), [3]); // middle([1,2,3,4,5]) => [3]
-
-//    Test Set 3: Testing Arrays Containing an Odd Number of Items
-assertArraysEqual(middle([1,2,3,4]), [2,3]);    // middle([1,2,3,4])    => [2,3]
-assertArraysEqual(middle([1,2,3,4,5,6]), [3,4]);// middle([1,2,3,4,5,6])=> [3,4]
-
+describe("#middle", () => {
+  it("returns [] for ['5']", () => {
+    assert.deepEqual(middle(['5']), []); 
+  });
+  it("returns [2] for [1, 2, 3]", () => {
+    assert.deepEqual(middle([1]), []);
+  });
+  it("returns '6, 7' for [5, 6, 7, 8]", () => {
+    assert.deepEqual(middle([5, 6, 7, 8]), [6, 7]); 
+  });
+});
