@@ -1,6 +1,10 @@
-node_modules
-.eslintrc.js
-package-lock.json
-.vscode/extensions.js
-extensions.json
-assertArrayEqual.js
+# **** eslint files - 4 files ****
+# .eslintrc.js, .vscode, package.json, package-lock.json)
+    .eslintrc.js
+    .vscode/extensions.js
+    package.json
+    package-lock.json
+
+# **** node_modules ****
+    node_modules
+    
