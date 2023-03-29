@@ -1,5 +1,5 @@
 {
-  "name": "eslint",
+  "name": "@jcloghesy/lotide",
   "version": "1.0.0",
   "description": "Lighthouse Labs - Project lotide (small library containing various function created to operate on Objects and Arrays - JavaScript)",
   "main": "index.js",
