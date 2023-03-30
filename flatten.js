@@ -44,7 +44,8 @@ const flatten = (sourceArray) => {
   let flattenedArray = []; 
     for (let i = 0; i < sourceArray.length; i++) {
     if (Array.isArray(sourceArray[i])) {
-      for (let j = sourceArray[i].length - 1; j >= 0; j--) {
+//      for (let j = sourceArray[i].length - 1; j >= 0; j--) {
+        for (let j = 0; j<sourceArray[i].length; j++) {
         flattenedArray.push(sourceArray[i][j]);
       }
     } else {
@@ -52,16 +53,17 @@ const flatten = (sourceArray) => {
         flattenedArray.push(sourceArray[i]);
     }
   }
-  return console.log(flattenedArray);
+  return flattenedArray;
 };
 
 
 // **** TESTING: flatten FUNCTION ****
 
 //    Test Set 1: Assigned Test Cases - testing function's general results
-flatten([1, 2, [3, 4], 5, [6]]) // => [1, 2, 3, 4, 5, 6]
+assertArraysEqual(flatten([1, 2, [3, 4], 5, [6]]), [1, 2, 3, 4, 5, 6]);
 
 //    Test Set 2: Additional Test Cases - empty arrays
-flatten([1, 2, [], 5, [6]]) // one empty array => [1, 2, 5, 6]
-flatten([[]])               // empty array only => []
+assertArraysEqual(flatten([1, 2, [], 5, [6]]), [1, 2, 5, 6]);
+assertArraysEqual(flatten([[]]), []);
+
 
