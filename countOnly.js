@@ -32,7 +32,7 @@ const countOnly = function(allItems, itemsToCount) {
   return results;
 };
 
-
+module.exports = countOnly;
 // **** TESTING: countOnly FUNCTION ****
 
 //    Test Set 1: Testing Arrays Containing One or Two Items

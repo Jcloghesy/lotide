@@ -56,7 +56,7 @@ const flatten = (sourceArray) => {
   return flattenedArray;
 };
 
-
+module.exports = flatten;
 // **** TESTING: flatten FUNCTION ****
 
 //    Test Set 1: Assigned Test Cases - testing function's general results

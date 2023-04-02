@@ -33,6 +33,7 @@ const findKeyByValue = function(sourceObject, value) {
   }
 }
 
+module.exports = findKeyByValue;
 
 // **** TESTING: findKeyByValue FUNCTION ****
 

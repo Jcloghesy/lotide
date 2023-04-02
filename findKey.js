@@ -26,7 +26,7 @@ const findKey = function(object, callback) {
   }
 };
 
-// **** TESTING: findKey FUNCTION **** 
+module.exports = findKey;
 
 //    Three Test to Ensure findKey function is Returning Correct Values 
 assertEqual(findKey({

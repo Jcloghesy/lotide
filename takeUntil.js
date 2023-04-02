@@ -51,7 +51,7 @@ const takeUntil = function(srcArray, callback) {
   }
 };
 
-
+module.exports = takeUntil;
 // **** TESTING: takeUntil FUNCTION ****
 
 // Sample Arrays for use in testing of takeUntil 
