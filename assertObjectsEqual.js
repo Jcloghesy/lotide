@@ -60,7 +60,7 @@ const assertObjectsEqual = function(actual, expected) {
   }
 };
 
-
+module.exports = assertObjectsEqual;
 // **** TESTING: assertObjectsEqual FUNCTION ****
 
 //   OBJECTS USED IN TESTING

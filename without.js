@@ -55,7 +55,7 @@ const without = function(sourceArray, itemsToRemove) {
   return newArray;
 };
 
-
+module.exports = without;
 // **** TESTING: without FUNCTION ****
 
 //    Test Set 1: Assigned Test Cases - testing function's general results

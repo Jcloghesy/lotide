@@ -46,7 +46,7 @@ const map = function(myArray, callback) {
   return results;
 };
 
-
+module.exports = map;
 //   **** TESTING: map FUNCTION ****
 
 // Sample Arrays for use in testing of map 
