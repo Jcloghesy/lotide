@@ -25,15 +25,15 @@ const middle = function (sourceArray) {
   let midElements = [];
   if (sourceArray.length <= 2) { 
     return midElements; 
-  } else if (sourceArray.length % 2 === 0) {
+  } 
+  if (sourceArray.length % 2 === 0) {
     midElements.push(sourceArray[(sourceArray.length / 2) - 1]), 
     midElements.push (sourceArray[(sourceArray.length / 2)]);
     return midElements
-  } else {
-    midElements.push[sourceArray[Math.floor(sourceArray.length / 2)]];
+  } 
+    midElements.push(sourceArray[Math.floor(sourceArray.length / 2)]);
     return midElements;
 
-  }
 };
 
 module.exports = middle;
