@@ -33,7 +33,6 @@ const middle = function (sourceArray) {
   } 
     midElements.push(sourceArray[Math.floor(sourceArray.length / 2)]);
     return midElements;
-
 };
 
 module.exports = middle;

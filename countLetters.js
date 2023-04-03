@@ -34,14 +34,6 @@ const countLetters = function(myString) {
 
 module.exports = countLetters;
 
-// **** TESTING: countLetters FUNCTION ****
 
-// Results to be Logged to the Console 
-console.log(countLetters("LHL"));
-console.table(countLetters("Hellooooo"));
 
-// Assertion Testing
-assertEqual(countLetters("testing LHL")["L"],2);
-assertEqual(countLetters("Hellooooo")["o"],5);
-assertEqual(countLetters("Nothing but AAAs here")["Z"],undefined);
 
