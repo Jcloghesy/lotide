@@ -1,39 +1,6 @@
 // ********* assertObjectsEqual FUNCTION  ********* 
 
-
-// **** REFERENCING OTHER FUNCTION: assertEqual AND eqArray ****
-
-//   eqArray Function Referenced 
-const eqArrays = (myArray1, myArray2) => {
-  if (myArray1.length !== myArray2.length) {
-    return false;
-  }
-    for (let i = 0; i < myArray1.length; i++) {
-        if (myArray1[i] !== myArray2[i]) {          
-          return false;  
-        }
-      }
-  return true;
-};
-
-//   eqObjects Function Referenced 
-const eqObjects = function(object1, object2) {
-  let object1Array = Object.keys(object1);
-  let object2Array = Object.keys(object2);
-  if (object1Array.length !== object2Array.length) {
-    return false;
-  }
-  for (const key of object1Array) {
-    if (object1[key] !== object2[key] && !Array.isArray(object1[key])) {
-      return false;
-    }
-    if (Array.isArray(object1[key]) && !eqArrays(object1[key], object2[key])) {
-      return false;
-    }
-  }
-  return true;
-};
-
+const eqObjects = require ('./eqObjects');
 
 /** **** FUNCTION IMPLEMENTATION: assertObjectsEqual FUNCTION ****
  *   Functionality - a function that takes in 2 objects and 

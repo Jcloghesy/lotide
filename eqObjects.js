@@ -1,30 +1,7 @@
 // ********* eqObjects FUNCTION  ********* 
 
-
-// **** REFERENCING OTHER FUNCTION: assertEqual AND eqArray ****
-
-//    assertEqual - used for testing of tail function (after adjustments)
-const assertEqual = function (actual, expected) {
-  if (actual === expected) {
-    console.log(`✅✅✅ Assertion Passed: ${actual} === ${expected}`);
-  } else {
-    console.log(`❌❌❌ Assertion Failed: ${actual} !== ${expected}`);
-  }
-};
-
-//   eqArray Function Referenced 
-const eqArrays = (myArray1, myArray2) => {
-  if (myArray1.length !== myArray2.length) {
-    return false;
-  }
-    for (let i = 0; i < myArray1.length; i++) {
-        if (myArray1[i] !== myArray2[i]) {          
-          return false;  
-        }
-      }
-  return true;
-};
-
+// **** REFERENCING OTHER FUNCTION(s): eqArrays ****
+const eqArrays = require('./eqArrays');
 
 /** **** FUNCTION IMPLEMENTATION: eqObjects FUNCTION ****
  *   Functionality - a function that takes in 2 objects and 

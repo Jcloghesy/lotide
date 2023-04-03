@@ -1,31 +1,6 @@
 // ********* letterPositions FUNCTION  ********* 
 
 
-// **** REFERENCING OTHER FUNCTIONS: assertArrayEqual and eqArray ****
-
-//   eqArray Function Referenced 
-const eqArrays = (myArray1, myArray2) => {
-  if (myArray1.length !== myArray2.length) {
-    return false;
-  }
-    for (let i = 0; i < myArray1.length; i++) {
-        if (myArray1[i] !== myArray2[i]) {          
-          return false;  
-        }
-      }
-  return true;
-};
-
-//   assertArrayEqual Function Referenced 
-const assertArraysEqual = function (myArray1, myArray2) {
-  if (!eqArrays(myArray1, myArray2)) {
-    console.log(`❌❌❌ Assertion Failed: ${myArray1} !== ${myArray2}`);
-  } else {
-    console.log(`✅✅✅ Assertion Passed: ${myArray1} === ${myArray2}`);
-  }
-};
-
-
 /** **** FUNCTION IMPLEMENTATION: letterPositions FUNCTION ****
  *   Functionality  - a function that takes in a string and 
  *                   returns all indices of letter positions in string

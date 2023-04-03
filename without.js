@@ -1,30 +1,6 @@
 // ********* without FUNCTION  ********* 
 
 
-// **** REFERENCING OTHER FUNCTIONS: assertArrayEqual and eqArray ****
-
-//   eqArray Function Referenced 
-const eqArrays = (myArray1, myArray2) => {
-  if (myArray1.length !== myArray2.length) {// tests length
-    return false;
-  }
-    for (let i = 0; i < myArray1.length; i++) { // compares items
-        if (myArray1[i] !== myArray2[i]) {          
-          return false;  
-        }
-      }
-  return true;
-};
-
-//   assertArrayEqual Function Referenced 
-const assertArraysEqual = function (myArray1, myArray2) {
-  if (!eqArrays(myArray1, myArray2)) {
-    console.log(`❌❌❌ Assertion Failed: ${myArray1} !== ${myArray2}`);
-  } else {
-    console.log(`✅✅✅ Assertion Passed: ${myArray1} === ${myArray2}`);
-  }
-};
-
 /** **** FUNCTION IMPLEMENTATION: without FUNCTION ****
  *  Functionality - a function that takes in a source array and 
  *                  an itemsToRemove arrays and returns only the items from 
