@@ -1,18 +1,5 @@
 // ********* findKeyByValue FUNCTION  ********* 
 
-
-// **** REFERENCING OTHER FUNCTION: assertEqual ****
-
-//    assertEqual - used for testing of tail function (after adjustments)
-const assertEqual = function (actual, expected) {
-  if (actual === expected) {
-    console.log(`✅✅✅ Assertion Passed: ${actual} === ${expected}`);
-  } else {
-    console.log(`❌❌❌ Assertion Failed: ${actual} !== ${expected}`);
-  }
-};
-
-
 /** **** FUNCTION IMPLEMENTATION: findKeyByValue FUNCTION ****
  *   Functionality - a function that takes in an object and a value and 
  *                   returns the first key that corresponds to that value

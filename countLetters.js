@@ -1,18 +1,5 @@
 // ********* countLetters FUNCTION  ********* 
 
-
-// **** REFERENCING OTHER FUNCTION: assertEqual ****
-
-//   assertEqual Function Referenced 
-const assertEqual = function (actual, expected) {
-  if (actual === expected) {
-    console.log(`✅✅✅ Assertion Passed: ${actual} === ${expected}`);
-  } else {
-    console.log(`❌❌❌ Assertion Failed: ${actual} !== ${expected}`);
-  }
-};
-
-
 /** **** FUNCTION IMPLEMENTATION: countLetters FUNCTION ****
  *   Functionality - a function that takes in a sentence and 
  *                    returns a count of each of the letters in sentence

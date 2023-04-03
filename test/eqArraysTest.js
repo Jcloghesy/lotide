@@ -4,7 +4,6 @@
 const eqArrays = require('../eqArrays');
 const assertEqual = require ('../assertEqual');
 
-
 //    Testing Array's Containing Numbers 
 assertEqual(eqArrays([1, 2, 3], [1, 2, 3]), true);  // => true
 assertEqual(eqArrays([1, 2, 3], [1, 2, "3"]), true); // => false

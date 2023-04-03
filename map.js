@@ -1,31 +1,5 @@
 // ********* map FUNCTION  ********* 
 
-
-// **** REFERENCING OTHER FUNCTION: assertEqual AND eqArray ****
-
-//    assertEqual - used for testing of function
-const assertEqual = function (actual, expected) {
-  if (actual === expected) {
-    console.log(`✅✅✅ Assertion Passed: ${actual} === ${expected}`);
-  } else {
-    console.log(`❌❌❌ Assertion Failed: ${actual} !== ${expected}`);
-  }
-};
-
-//   eqArray Function Referenced 
-const eqArrays = (myArray1, myArray2) => {
-  if (myArray1.length !== myArray2.length) {
-    return false;
-  }
-    for (let i = 0; i < myArray1.length; i++) {
-        if (myArray1[i] !== myArray2[i]) {          
-          return false;  
-        }
-      }
-  return true;
-};
-
-
  /**  **** FUNCTION IMPLEMENTATION: map FUNCTION ****
   *    Functionality - a function that takes in an array and a callback and
   *                    returns a new array based on the 

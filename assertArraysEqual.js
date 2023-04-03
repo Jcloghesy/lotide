@@ -1,7 +1,7 @@
 // ********* assertArraysEqual FUNCTION  ********* 
 
 // **** REFERENCING OTHER FUNCTION(s): eqArrays ****
-const eqArrays = require("./eqArrays")
+const eqArrays = require('./eqArrays');
 
 /** **** FUNCTION IMPLEMENTATION: assertArraysEqual FUNCTION ****
  *  Functionality - a function that takes in 2 arrays and 
