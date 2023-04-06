@@ -3,7 +3,9 @@
 A mini clone of the [Lodash](https://lodash.com) library.
 (A small library containing various function created to operate on Objects and Arrays - JavaScript)
 
-The  lotide project is a project inspired by the Lodash library.  Although being a much smaller and simpler collection of functions relative to Lotide, the focus of the two libraries is similar as they contain functions that operate on data, namely Arrays and Objects.  
+The  lotide project is a project inspired by the Lodash library.  
+Although being a much smaller and simpler collection of functions relative to Lotide, the focus of 
+the two libraries is similar as they contain functions that operate on data, namely Arrays and Objects.  
 
 ## Purpose
 
