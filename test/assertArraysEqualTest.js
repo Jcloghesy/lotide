@@ -1,6 +1,6 @@
 // **** TESTING: assertArraysEqual FUNCTION ****
 
-// **** REFERENCING OTHER FUNCTION(s): assertArraysEqual ****
+// **** REFERENCING OTHER FUNCTION(s): assertArraysEqual & eqArrays ****
 const assertArraysEqual = require ('../assertArraysEqual');
 
 //    Testing Array's Containing Numbers and Strings 

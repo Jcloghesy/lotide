@@ -1,31 +1,28 @@
 # Lotide
 
-A mini clone of the [Lodash](https://lodash.com) library.
-(A small library containing various function created to operate on Objects and Arrays - JavaScript)
+    Lotide is a project inspired by the [Lodash](https://lodash.com) library.  
 
-The  lotide project is a project inspired by the Lodash library.  
-Although being a much smaller and simpler collection of functions relative to Lotide, the focus of 
-the two libraries is similar as they contain functions that operate on data, namely Arrays and Objects.  
+    A small clone that contains a selection of similar functions created to operate on data, namely Objects and Arrays.  
 
 ## Purpose
 
 **_BEWARE:_ This library was published for learning purposes. It is _not_ intended for use in production-grade software.**
 
-This project was created and published by me as part of my learnings at Lighthouse Labs. 
+    This project was created and published by me as part of my learnings at Lighthouse Labs.
 
 ## Usage
 
 **Install it:**
 
-`npm install @jcloghesy/lotide`
+        `npm install @jcloghesy/lotide`
 
 **Require it:**
 
-`const _ = require('@jcloghesy/lotide');`
+       `const _ = require('@jcloghesy/lotide');`
 
 **Call it:**
 
-`const results = _.tail([1, 2, 3]) // => [2, 3]`
+        `const results = _.tail([1, 2, 3]) // => [2, 3]`
 
 ## Documentation
 
