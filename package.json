@@ -1,6 +1,6 @@
 {
   "name": "@jcloghesy/lotide",
-  "version": "1.0.4",
+  "version": "1.0.6",
   "description": "Lighthouse Labs - Project lotide (small library containing various function created to operate on Objects and Arrays - JavaScript)",
   "main": "index.js",
   "dependencies": {
@@ -17,7 +17,7 @@
     "type": "git",
     "url": "git+https://github.com/Jcloghesy/lotide.git"
   },
-  "author": "",
+  "author": "John Cloghesy <john.cloghesy@gmail.com>",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/Jcloghesy/lotide/issues"
